@@ -23,3 +23,18 @@ function dataDisplay(item){
 // Perform the function on data to display on site
 dataDisplay(tableData)
 console.log("Second Step")
+
+// Select filter button
+var filterBtn = d3.select("#filter-btn")
+filterBtn.on("click", function(){
+    console.log("Step 3")
+
+// Prevent page from refreshing on click
+d3.event.preventDefault();
+
+// Choose input element and grab raw HTML node
+// Then grab the value property of the input element
+var dateInput = d3.select("#datetime");
+var dateVal = 
+}
+
