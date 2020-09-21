@@ -60,10 +60,11 @@ var tableFilter = tableData.filter(ufo_sighting =>{
     return(ufo_sighting.datetime===dateVal || !dateVal) &&
               (ufo_sighting.city===cityVal || !cityVal) &&
               (ufo_sighting.state===stateVal || !stateVal) &&
-              (ufo_sighting===countryVal || !countryVal) &&
-              (ufo_sighting===shapeVal || !shapeVal )
+              (ufo_sighting.country===countryVal || !countryVal) &&
+              (ufo_sighting.shape===shapeVal || !shapeVal )
 })
 
+// Run filter function through the dataDisplay function to display filtered input
 dataDisplay(tableFilter);
 
 });
